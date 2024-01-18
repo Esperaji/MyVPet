@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pets</title>
+</head>
+<body>
+    <h1>Pets</h1>
+    <table>
+        <tr th:each="pets:${pet}">
+            <td><h3 th:text="${pets.name}"></h3></td>
+            <td><h3 th:text="${pets.species}"></h3></td>
+            <td><h3 th:text="${pets.typeOfPet}"></h3></td>
+            <td><h3 th:text="${pets.boredom}"></h3></td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>

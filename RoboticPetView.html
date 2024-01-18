@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Robotic Pets</title>
+</head>
+<body>
+    <h1>Robotic Pets</h1>
+
+    <table>
+        <tr th:each="robots:${robot}">
+            <td><h3 th:text="${robots.name}"></h3></td>
+            <td><h3 th:text="${robots.oil}"></h3></td>
+            <td><h3 th:text="${robots.batteriesCharged}"></h3></td>
+            <td><h3 th:text="${robots.softwareUpdated}"></h3></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

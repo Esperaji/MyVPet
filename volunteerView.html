@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Volunteers and Shelters</title>
+</head>
+<body>
+  <h1>Volunteers List</h1>
+  <ul>
+    <h2><li th:each="volunteers : ${volunteer}">
+      <span th:text="${volunteers.lastName}"></span>
+      <span th:text="${volunteers.firstName}"></span></h2>
+     
+     </span>
+    </li>
+      
+    </li>
+  </ul>
+    
+</body>
+</html>
